@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Monsters Inc | Alisson Fajardo Perez, 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    background-color: white;
+}
+.logo {
+    width: 335px;
+    display: block;
+    margin: auto;
+    padding-top: 130px;
+    opacity: 0;
+    animation: fadein 5s forwards;
+    padding-bottom: 30px;
+}
+@keyframes fadein {
+to {
+opacity: 1;
+}
+}
+wrapper {
+    display: block;
+    margin: auto;
+    width: 1366px;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+	font-family: "Henny Penny", system-ui;
+}
+header {
+    margin: 0;
+    background-size: cover;
+    background-image: url("backgroundtwo.jpg");
+    height: 55vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0px 0px 180px 180px;
+    width: 1366px;
+}
+.description {
+     text-align: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 19px;
+	font-family: "Red Hat Display", sans-serif;
+}
+ul li {
+    margin: 0 15px;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+    padding-top: 60px;
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px 3px rgba(11,156,49,0.99);
+	font-family: "Red Hat Display", sans-serif;
+}
+ul li:hover {
+    text-shadow: 2px 2px 3px #ba3801;
+}
+.footer {
+	margin: 0;
+    text-align: center;
+    margin-left: 70px;
+    margin-right: 70px;
+	font-family: "Red Hat Display", sans-serif;
+}
+#MonstersIncVideo {
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.doors {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.doorcard {
+  position: relative;
+  display: inline-block;
+}
+.doorcard img.door {
+  display: block; 
+  border-radius: 6px;
+}
+.doorcard .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.doorcard .info img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 4px;
+}
+.doorcard:hover .info {
+  opacity: 1;
+}
+</style>
+</head>
+
+<body>
+<wrapper>
+  <header> <img class="logo" src="logo.png"/>
+    <div>
+      <ul>
+        <li>Home</li>
+        <li>Movies</li>
+        <li>Shop</li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h1>We Scare Because We Care</h1>
+      <p class="description">In the city of Monstropolis, monsters generate energy by scaring human children. The power company, Monsters, Inc., employs “scarers” who enter the human world through closet doors. The top scarer, James P. “Sulley” Sullivan, and his best friend and assistant, Mike Wazowski, are excellent at their jobs, until everything changes when a human toddler, later named Boo, accidentally enters the monster world.
+        Because monsters believe children are toxic, Boo’s presence causes chaos. Sulley and Mike try to return her home while uncovering a sinister plot led by fellow scarer Randall, who is developing a machine to forcibly extract screams from children. As they protect Boo, Sulley and Mike discover that laughter produces even more energy than screams, ultimately transforming the entire industry.
+        The film ends with the company shifting to laughter power, Boo returning home, and Sulley becoming the new CEO of Monsters, Inc., ushering in a friendlier, safer era. </p>
+    </section>
+    <video id="MonstersIncVideo" width="560" height="315" autoplay muted loop playsinline>
+  <source src="monstersIncmovie.mp4" type="video/mp4">
+</video>
+    <section class="doors">
+      <div class="doorcard"> <img class="doors" src="door1.png"/>
+        <div class="info"> <img src="Artboard2.png"/> </div>
+      </div>
+      <div class="doorcard"> <img class="doors" src="door2.png"/>
+        <div class="info"><img src="Artboard3.png"/> </div>
+      </div>
+      <div class="doorcard"><img class="doors" src="door3.jpeg"/>
+		  <div class="info">
+		<img src="Artboard1.png"/>
+		  </div>
+		</div>
+      <div class="doorcard"><img class="doors" src="door4.jpeg"/>
+		  <div class="info">
+		<img src="Artboard4.jpg"/>
+		</div></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2025, Alisson Fajardo Perez.</p>
+    <p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+  </footer>
+</wrapper>
+</body>
+</html>
